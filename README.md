@@ -1,12 +1,12 @@
 # WhyTrace — Temporal Decision Graph Engine for Codebases
-### 🏆 Built for HackFront 2026 | Theme T1: AI & Developer Tools (PS T1.1)
+### Built for HackFront 2026 | Theme T1: AI & Developer Tools (PS T1.1)
 **Category Track:** Best Use of Neo4j AuraDB
 
 > *"In every engineering team there is one person who knows why. When that engineer leaves, the codebase stays and the reasoning walks out of the door."*
 
 ---
 
-## 🎯 The Core Thesis: Why The Graph Does The Work
+## The Core Thesis: Why The Graph Does The Work
 
 Modern code assistants and RAG pipelines use **vector search over raw documents and code snippets**. This approach **fails fundamentally** on institutional code history:
 1. **Vector search is blind to temporal invalidation**: When queried about a retry threshold or cache policy, vector search returns high-scoring chunks from a 2021 architecture document, ignoring the quiet 2023 PR that reversed it.
@@ -20,7 +20,7 @@ Modern code assistants and RAG pipelines use **vector search over raw documents 
 
 ---
 
-## 🏗️ Graph Model & Neo4j Ontology
+## Graph Model & Neo4j Ontology
 
 ```mermaid
 graph TD
@@ -71,7 +71,7 @@ graph TD
 
 ---
 
-## ⚡ The Head-to-Head Proof (Vector Search vs Neo4j Graph)
+## The Head-to-Head Proof (Vector Search vs Neo4j Graph)
 
 | Dimension | Naive Vector Search (Standard RAG) | **WhyTrace (Neo4j Graph)** |
 | :--- | :--- | :--- |
@@ -82,7 +82,7 @@ graph TD
 
 ---
 
-## 🧪 Built-In Test Cases for Judging
+## Built-In Test Cases for Judging
 
 1. **Case 1: The Outage Override (Supersession Detection)**
    - Query: *"Why is the connection pool retry limit set to 3?"*
@@ -103,7 +103,7 @@ graph TD
 
 ---
 
-## 🚀 Neo4j Setup & Local Execution Guide
+## Neo4j Setup & Local Execution Guide
 
 ### Prerequisites
 - Python 3.10 or higher
